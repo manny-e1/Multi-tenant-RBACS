@@ -15,6 +15,13 @@
       "when": 1685084867947,
       "tag": "0001_great_sugar_man",
       "breakpoints": false
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1685085320603,
+      "tag": "0002_workable_joystick",
+      "breakpoints": false
     }
   ]
 }

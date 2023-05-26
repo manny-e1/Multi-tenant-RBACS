@@ -36,3 +36,12 @@ export const roles = pgTable('roles', {
         idIndex: uniqueIndex("roles_id_index").on(roles.id),
     }
 })
+
+export const usersToRoles = pgTable('usersToRoles ',{
+    applicationId: uuid("applicationId").references(()=>applications.id).notNull(),
+    roleId: uuid("roleId").references(()=>roles.id).notNull(),
+    userId: uuid("userId").references(()=>users.id).notNull(),
+},(usersToRoles)=>{
+        return {cpk:primaryKey(usersToRoles.applicationId,usersToRoles.roleId,usersToRoles.userId
+                              )}
+    })

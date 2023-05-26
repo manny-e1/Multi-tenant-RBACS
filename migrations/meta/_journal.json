@@ -8,6 +8,13 @@
       "when": 1685083699653,
       "tag": "0000_supreme_grandmaster",
       "breakpoints": false
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1685084867947,
+      "tag": "0001_great_sugar_man",
+      "breakpoints": false
     }
   ]
 }

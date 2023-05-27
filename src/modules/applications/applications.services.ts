@@ -14,4 +14,5 @@ export async function getApplications(){
         name: applications.name,
         createdAt: applications.createdAt
     }).from(applications)
+    return result
 }

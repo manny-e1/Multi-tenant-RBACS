@@ -10,6 +10,7 @@ export const applications = pgTable("applications",{
 export const users = pgTable('users', {
     id: uuid("id").defaultRandom().notNull(),
     email: varchar('email', {length:256}).notNull(),
+    name: varchar("name", { length: 256 }).notNull(),
     applicationId: uuid('applicationId').references(()=>applications.id),
     password: varchar("password", {length:256}).notNull(),
     permissions: text('permissions').array().$type<Array<string>>(),
